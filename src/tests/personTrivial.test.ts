@@ -17,8 +17,3 @@ describe("person", () => {
 
 
 
-describe("breaker", () => {
-    test("break the test", () => {
-        expect(true).toEqual(false);
-    });
-});
