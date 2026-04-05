@@ -41,7 +41,7 @@ jobs:
       - name: 'Build and push image'
         run: 'gcloud builds submit --tag us-central1-docker.pkg.dev/notely-492220/notely-ar-repo/notely-image:latest .'
 
-      - name: Rum migrations
+      - name: Run migrations
         run: npx drizzle-kit migrate
 
       - name: Deploy to Cloud Run
